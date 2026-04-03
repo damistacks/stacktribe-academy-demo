@@ -1,0 +1,429 @@
+/* ═══════════════════════════════════════
+   TABLET — max 1024px
+════════════════════════════════════════ */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .grid-3,
+  .grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Hide top bar address on tablet to save space */
+  .top-bar__item:last-of-type {
+    display: none;
+  }
+
+  /* Switch to hamburger at 1024px */
+  .navbar__hamburger {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .navbar__links {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--color-white);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    gap: 0.25rem;
+    z-index: 998;
+  }
+
+  .navbar__links--open {
+    display: flex;
+  }
+
+  .navbar__links li {
+    width: 100%;
+  }
+
+  .navbar__link {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+  }
+
+  /* Dropdowns on tablet: show inline */
+  .navbar__dropdown {
+    position: static;
+    opacity: 1;
+    visibility: visible;
+    transform: none;
+    box-shadow: none;
+    padding-left: 1rem;
+    display: none;
+  }
+
+  .navbar__item--dropdown.open .navbar__dropdown {
+    display: block;
+  }
+
+  .top-bar__item:nth-child(2) {
+    display: none;
+  }
+
+  /* Why Choose section */
+  .why-choose__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .why-choose__icon-img {
+    height: 100px;
+  }
+
+  /* Our Programs section */
+  .programs__grid {
+    row-gap: 80px;
+    column-gap: 3rem;
+  }
+
+  .programs__icon-img {
+    height: 110px;
+  }
+
+  /* Director's Message */
+  .director__inner {
+    gap: 2.5rem;
+  }
+
+  .director__img-main {
+    width: 100%;
+    height: 500px;
+  }
+
+  .director__img-teacher {
+    width: 200px;
+    height: 172px;
+  }
+
+  .director__img-classroom {
+    width: 200px;
+    height: 168px;
+  }
+
+  /* Hide teacher and classroom images on tablet */
+  .director__img-stack {
+    display: none;
+  }
+
+  .director__images {
+    width: 35%;
+  }
+
+  /* Testimonials */
+  .testimonials__card {
+    height: auto;
+  }
+
+  .testimonials__img-wrap {
+    width: 280px;
+    height: auto;
+    min-height: 400px;
+  }
+
+  .testimonials__content {
+    padding: 2.5rem;
+  }
+
+  .testimonials__text {
+    font-size: 1.125rem;
+  }
+
+  .testimonials__author-name {
+    font-size: 1.5rem;
+  }
+
+  /* Teachers */
+  .teachers__grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 280px));
+    column-gap: 40px;
+    row-gap: 72px;
+    justify-content: center;
+    margin-bottom: 3rem;
+    max-width: 100%;
+  }
+
+  .teachers__card {
+    width: 100%;
+  }
+
+  .teachers__img-wrap {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+  }
+
+  .teachers__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* News & Events */
+  .news__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 32px;
+    justify-content: unset;
+  }
+
+  .news__card {
+    width: 100%;
+  }
+}
+
+/* Mid desktop — max 1300px */
+@media (max-width: 1300px) {
+  .teachers__grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    column-gap: 32px;
+    row-gap: 56px;
+    justify-content: unset;
+  }
+
+  .teachers__card {
+    width: 100%;
+  }
+
+  .teachers__img-wrap {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+  }
+
+  .teachers__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Hide label text on mobile, keep bell icon */
+  .updates-bar__label span {
+    display: none;
+  }
+
+  /* Hide divider too on mobile */
+  .updates-bar__divider {
+    display: none;
+  }
+
+  /* Admissions banner stacks on mobile */
+  .admission-banner__inner {
+    flex-direction: column;
+    align-items: stretch;
+    border-radius: 12px; /* ensure parent keeps its radius */
+    overflow: hidden; /* this clips everything inside including image */
+  }
+
+  .admission-banner__image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    align-self: auto;
+    overflow: hidden;
+    background: var(--color-green-dark);
+    border-radius: 0; /* parent handles all corners */
+  }
+
+  .admission-banner__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 12.5%; /* pulls image down to show face */
+    transform: none;
+  }
+
+  .admission-banner__content {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
+  .admission-banner__title {
+    font-size: 1.5rem;
+  }
+
+  .admission-banner__text {
+    font-size: 1rem;
+  }
+
+  .admission-banner__ctas {
+    justify-content: center;
+  }
+
+  /* Why Choose section */
+  .why-choose__grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .why-choose__icon-img {
+    height: 90px; /* smaller icons on mobile */
+  }
+
+  .why-choose__title {
+    font-size: 1.5rem;
+  }
+
+  /* Our Programs section */
+  .programs__grid {
+    grid-template-columns: 1fr;
+    row-gap: 60px;
+    column-gap: 0;
+  }
+
+  .programs__icon-img {
+    height: 90px;
+  }
+
+  .programs__title {
+    font-size: 1.8rem;
+  }
+
+  .programs__label {
+    font-size: 1.125rem;
+  }
+
+  /* Director's Message — stack on mobile */
+  .director__inner {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  /* Hide teacher and classroom images on mobile */
+  .director__img-stack {
+    display: none;
+  }
+
+  /* Main director image full width on mobile */
+  .director__img-main {
+    width: 100%;
+    height: 380px;
+  }
+
+  .director__img-main .director__img {
+    object-position: center 9%;
+  }
+
+  .director__images {
+    width: 100%;
+  }
+
+  .director__title {
+    font-size: 1.75rem;
+  }
+
+  .director__text {
+    font-size: 1rem;
+  }
+
+  /* Testimonials */
+  .testimonials__card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .testimonials__img-wrap {
+    width: 100%;
+    height: 280px;
+  }
+
+  .testimonials__content {
+    padding: 2rem 1.5rem;
+    gap: 1rem;
+  }
+
+  .testimonials__text {
+    font-size: 1rem;
+  }
+
+  .testimonials__author-name {
+    font-size: 1.25rem;
+  }
+
+  .testimonials__title {
+    font-size: 1.75rem;
+  }
+
+  .testimonials__quote-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Teachers */
+  .teachers__grid {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 16px;
+    row-gap: 36px;
+    justify-content: unset;
+  }
+
+  .teachers__card {
+    width: 100%;
+  }
+
+  .teachers__img-wrap {
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    position: relative;
+  }
+
+  .teachers__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .teachers__title {
+    font-size: 1.75rem;
+  }
+
+  .teachers__name {
+    font-size: 1rem;
+  }
+
+  .teachers__role {
+    font-size: 0.875rem;
+  }
+
+  /* News & Events */
+  .news__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+    justify-content: unset;
+  }
+
+  .news__card {
+    width: 100%;
+  }
+
+  .news__title {
+    font-size: 1.75rem;
+  }
+
+  .news__img-wrap {
+    height: 200px;
+  }
+}
