@@ -1023,7 +1023,7 @@ p.xtra-small {
   font-family: "Inter", sans-serif;
   font-size: 1.5rem; /* h2.small — 24px */
   font-weight: 500;
-  color: var(--color-green-main);
+  color: #006400;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 0.4rem;
@@ -1757,4 +1757,105 @@ p.xtra-small {
 .news__view-all-icon {
   width: 14px;
   height: 14px;
+}
+
+/* ─────────────────────
+   SCHOOL GALLERY
+───────────────────── */
+.gallery {
+  background: #fdfbef;
+  padding: 80px 0;
+}
+
+/* Header */
+.gallery__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.gallery__label {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #006400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+  line-height: 1.35;
+}
+
+.gallery__title {
+  font-family: "Inter", sans-serif;
+  font-size: 2.375rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0;
+  line-height: 1.25;
+}
+
+/* Grid
+   3 × 410px = 1230px | remaining = 50px | gap = 50 / 2 = 25px each */
+.gallery__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 25px;
+  width: 100%;
+}
+
+/* Item */
+.gallery__item {
+  position: relative;
+  width: 100%;
+  height: 308px;
+  border-radius: 12px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Image */
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.gallery__item:hover .gallery__img {
+  transform: scale(1.05);
+}
+
+/* Overlay */
+.gallery__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5, 150, 105, 0.25); /* #059669 at 25% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+  border-radius: 12px;
+}
+
+.gallery__item:hover .gallery__overlay {
+  opacity: 1;
+}
+
+/* Overlay Text */
+.gallery__overlay-text {
+  font-family: "Inter", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-white);
+  text-align: center;
+  padding: 0 1rem;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(8px);
+  transition: transform 0.35s ease;
+}
+
+.gallery__item:hover .gallery__overlay-text {
+  transform: translateY(0);
 }

@@ -182,6 +182,15 @@
   .news__card {
     width: 100%;
   }
+
+  /* Gallery */
+  .gallery__grid {
+    gap: 20px;
+  }
+
+  .gallery__item {
+    height: 240px;
+  }
 }
 
 /* Mid desktop — max 1300px */
@@ -317,7 +326,7 @@
   /* Main director image full width on mobile */
   .director__img-main {
     width: 100%;
-    height: 380px;
+    height: 400px;
   }
 
   .director__img-main .director__img {
@@ -344,7 +353,7 @@
 
   .testimonials__img-wrap {
     width: 100%;
-    height: 280px;
+    height: 200px;
   }
 
   .testimonials__content {
@@ -429,5 +438,23 @@
 
   .news__card-body {
     padding: 1.25rem;
+  }
+
+  /* Gallery */
+  .gallery__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .gallery__item {
+    height: 180px;
+  }
+
+  .gallery__overlay-text {
+    font-size: 1.1rem;
+  }
+
+  .gallery__title {
+    font-size: 1.75rem;
   }
 }
