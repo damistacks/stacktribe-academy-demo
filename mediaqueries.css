@@ -411,7 +411,7 @@
   /* News & Events */
   .news__grid {
     grid-template-columns: 1fr;
-    gap: 24px;
+    gap: 48px;
     justify-content: unset;
   }
 
@@ -425,5 +425,9 @@
 
   .news__img-wrap {
     height: 200px;
+  }
+
+  .news__card-body {
+    padding: 1.25rem;
   }
 }
