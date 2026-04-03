@@ -3,10 +3,10 @@
 Introducing StackTribe Academy Website.
 The idea is to build a digital solution for Nigerian Private Schools; to enable parents access their children results, make secure payments, and manage school activities — all in one place.
 
-Core Features:
-📊 Instant Result Access 
-💳 Secure Fee Payments 
-🏫 Centralized School Portal 
+Core Features: <br>
+📊 Instant Result Access <br>
+💳 Secure Fee Payments <br>
+🏫 Centralized School Portal <br>
 
 ## Deployment
 
