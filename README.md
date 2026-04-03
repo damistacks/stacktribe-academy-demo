@@ -29,8 +29,8 @@ stacktribe-academy-demo/
 │   ├── icons/           ← Icons
 │   └── images/          ← Images
 ├── index.html        ← Homepage HTML
-├── style.css         ← CSS Styles
-├── mediaqueries.css  ← MediaQueries Styles
+├── style.css         ← CSS
+├── mediaqueries.css  ← MediaQueries
 ├── script.js         ← JavaScript
 ```
 
