@@ -411,7 +411,7 @@
   /* News & Events */
   .news__grid {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 44px;
     justify-content: unset;
   }
 
