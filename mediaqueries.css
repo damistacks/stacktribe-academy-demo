@@ -276,6 +276,16 @@
     flex: 1;
     height: auto;
   }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .footer__col:nth-child(2) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 /* Mid desktop — max 1300px */
@@ -580,5 +590,42 @@
   .contact__submit {
     width: 100%;
     justify-content: center;
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer__col:nth-child(2) {
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+  }
+
+  .footer__upper {
+    padding: 60px 0;
+  }
+
+  .footer__info-link {
+    font-size: 1rem;
+  }
+
+  .footer__link {
+    font-size: 1rem;
+  }
+
+  .footer__campus-text,
+  .footer__hours-text {
+    font-size: 1rem;
+  }
+
+  .footer__col-title {
+    font-size: 1.25rem;
+  }
+
+  .footer__copyright {
+    font-size: 0.875rem;
+    text-align: center;
   }
 }
