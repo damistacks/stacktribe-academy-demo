@@ -191,6 +191,24 @@
   .gallery__item {
     height: 240px;
   }
+
+  /* Contact */
+  .contact__inner {
+    width: 100%;
+    gap: 20px;
+  }
+
+  .contact__img-wrap {
+    width: 280px;
+    height: auto;
+    min-height: 500px;
+  }
+
+  .contact__form-wrap {
+    width: auto;
+    flex: 1;
+    height: auto;
+  }
 }
 
 /* Mid desktop — max 1300px */
@@ -464,5 +482,36 @@
 
   .gallery__title {
     font-size: 1.75rem;
+  }
+
+  /* Contact */
+  .contact__inner {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  /* Hide image on mobile */
+  .contact__img-wrap {
+    display: none;
+  }
+
+  .contact__form-wrap {
+    width: 100%;
+    height: auto;
+    padding: 1.75rem;
+  }
+
+  .contact__form-row {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .contact__title {
+    font-size: 1.75rem;
+  }
+
+  .contact__submit {
+    width: 100%;
+    justify-content: center;
   }
 }

@@ -1241,6 +1241,121 @@
       </div>
     </section>
 
+    <!-- ═══════════════════════════════════════
+     CONTACT US
+════════════════════════════════════════ -->
+    <section class="contact">
+      <div class="container">
+        <!-- Header -->
+        <div class="contact__header">
+          <h2 class="contact__label">Contact Us</h2>
+          <h2 class="contact__title">Get in Touch</h2>
+        </div>
+
+        <!-- Inner -->
+        <div class="contact__inner">
+          <!-- Left: Image -->
+          <div class="contact__img-wrap">
+            <img
+              src="assets/images/contact.png"
+              alt="Contact StackTribe Academy"
+              class="contact__img"
+            />
+            <div class="contact__img-overlay">
+              <p class="contact__img-text">
+                Have a question? Fill out the form and we'll get back to you
+                within 24 hours.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: Form -->
+          <div class="contact__form-wrap">
+            <form class="contact__form">
+              <!-- Row 1: Name + Email -->
+              <div class="contact__form-row">
+                <div class="contact__form-group">
+                  <label class="contact__label-field" for="contact-name"
+                    >Name</label
+                  >
+                  <input
+                    type="text"
+                    id="contact-name"
+                    class="contact__input"
+                    placeholder="John Doe"
+                  />
+                </div>
+                <div class="contact__form-group">
+                  <label class="contact__label-field" for="contact-email"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    id="contact-email"
+                    class="contact__input"
+                    placeholder="john@example.com"
+                  />
+                </div>
+              </div>
+
+              <!-- Row 2: Phone + Inquiry Type -->
+              <div class="contact__form-row">
+                <div class="contact__form-group">
+                  <label class="contact__label-field" for="contact-phone"
+                    >Phone</label
+                  >
+                  <input
+                    type="tel"
+                    id="contact-phone"
+                    class="contact__input"
+                    placeholder="+234 703 741 3594"
+                  />
+                </div>
+                <div class="contact__form-group">
+                  <label class="contact__label-field" for="contact-inquiry"
+                    >Inquiry Type</label
+                  >
+                  <select
+                    id="contact-inquiry"
+                    class="contact__input contact__select"
+                  >
+                    <option value="" disabled selected hidden>
+                      Select an option...
+                    </option>
+                    <option value="admissions">Admissions</option>
+                    <option value="fees">Fees &amp; Scholarships</option>
+                    <option value="academics">Academics</option>
+                    <option value="programs">Programs</option>
+                    <option value="events">Events</option>
+                    <option value="portal">School Portal</option>
+                    <option value="other">Other Inquiry</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div class="contact__form-group contact__form-group--full">
+                <label class="contact__label-field" for="contact-message"
+                  >Message</label
+                >
+                <textarea
+                  id="contact-message"
+                  class="contact__textarea"
+                  placeholder="Tell us about your child, preferred class, and any questions you have..."
+                  rows="5"
+                ></textarea>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="contact__submit">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <script src="script.js" defer></script>
   </body>
 </html>
