@@ -285,9 +285,10 @@ startTestimonialAutoplay();
    CONTACT FORM — VALIDATION & SUBMISSION
 ════════════════════════════════════════ */
 const contactForm = document.querySelector(".contact__form");
-const submitBtn = document.querySelector(".contact__submit");
 
-// ── Validation Rules ──
+// Store original HTML once on page load
+const originalFormHTML = contactForm.innerHTML;
+
 function validateName(value) {
   if (!value.trim()) return "Name is required.";
   if (value.trim().length < 2) return "Name must be at least 2 characters.";
@@ -322,11 +323,11 @@ function validateMessage(value) {
   return "";
 }
 
-// ── Show / Clear Error ──
 function showError(fieldId, message) {
   const field = document.getElementById(fieldId);
+  if (!field) return;
   field.classList.add("contact__input--error");
-
+  field.classList.remove("contact__input--valid");
   let errorEl = field.parentElement.querySelector(".contact__error");
   if (!errorEl) {
     errorEl = document.createElement("span");
@@ -338,58 +339,68 @@ function showError(fieldId, message) {
 
 function clearError(fieldId) {
   const field = document.getElementById(fieldId);
+  if (!field) return;
   field.classList.remove("contact__input--error");
   field.classList.add("contact__input--valid");
-
   const errorEl = field.parentElement.querySelector(".contact__error");
   if (errorEl) errorEl.remove();
 }
 
-// ── Real-time Validation on Blur ──
-document.getElementById("contact-name").addEventListener("blur", function () {
-  const err = validateName(this.value);
-  err ? showError("contact-name", err) : clearError("contact-name");
-});
+function attachFormListeners() {
+  const form = document.querySelector(".contact__form");
+  if (!form) return;
 
-document.getElementById("contact-email").addEventListener("blur", function () {
-  const err = validateEmail(this.value);
-  err ? showError("contact-email", err) : clearError("contact-email");
-});
+  document
+    .getElementById("contact-name")
+    ?.addEventListener("blur", function () {
+      const err = validateName(this.value);
+      err ? showError("contact-name", err) : clearError("contact-name");
+    });
 
-document.getElementById("contact-phone").addEventListener("blur", function () {
-  const err = validatePhone(this.value);
-  err ? showError("contact-phone", err) : clearError("contact-phone");
-});
+  document
+    .getElementById("contact-email")
+    ?.addEventListener("blur", function () {
+      const err = validateEmail(this.value);
+      err ? showError("contact-email", err) : clearError("contact-email");
+    });
 
-document
-  .getElementById("contact-inquiry")
-  .addEventListener("change", function () {
-    const err = validateInquiry(this.value);
-    err ? showError("contact-inquiry", err) : clearError("contact-inquiry");
+  document
+    .getElementById("contact-phone")
+    ?.addEventListener("blur", function () {
+      const err = validatePhone(this.value);
+      err ? showError("contact-phone", err) : clearError("contact-phone");
+    });
+
+  document
+    .getElementById("contact-inquiry")
+    ?.addEventListener("change", function () {
+      const err = validateInquiry(this.value);
+      err ? showError("contact-inquiry", err) : clearError("contact-inquiry");
+    });
+
+  document
+    .getElementById("contact-message")
+    ?.addEventListener("blur", function () {
+      const err = validateMessage(this.value);
+      err ? showError("contact-message", err) : clearError("contact-message");
+    });
+
+  [
+    "contact-name",
+    "contact-email",
+    "contact-phone",
+    "contact-inquiry",
+    "contact-message",
+  ].forEach((id) => {
+    document.getElementById(id)?.addEventListener("focus", function () {
+      this.classList.remove("contact__input--valid");
+    });
   });
 
-document
-  .getElementById("contact-message")
-  .addEventListener("blur", function () {
-    const err = validateMessage(this.value);
-    err ? showError("contact-message", err) : clearError("contact-message");
-  });
+  form.addEventListener("submit", handleSubmit);
+}
 
-// ── Clear valid state on focus ──
-[
-  "contact-name",
-  "contact-email",
-  "contact-phone",
-  "contact-inquiry",
-  "contact-message",
-].forEach((id) => {
-  document.getElementById(id).addEventListener("focus", function () {
-    this.classList.remove("contact__input--valid");
-  });
-});
-
-// ── Form Submit ──
-contactForm.addEventListener("submit", async function (e) {
+async function handleSubmit(e) {
   e.preventDefault();
 
   const name = document.getElementById("contact-name").value;
@@ -398,7 +409,6 @@ contactForm.addEventListener("submit", async function (e) {
   const inquiry = document.getElementById("contact-inquiry").value;
   const message = document.getElementById("contact-message").value;
 
-  // Validate all fields
   const errors = {
     "contact-name": validateName(name),
     "contact-email": validateEmail(email),
@@ -412,14 +422,13 @@ contactForm.addEventListener("submit", async function (e) {
     if (err) {
       showError(id, err);
       hasError = true;
-    } else {
-      clearError(id);
-    }
+    } else clearError(id);
   });
 
   if (hasError) return;
 
-  // Loading state
+  // Get button fresh each time
+  const submitBtn = document.querySelector(".contact__submit");
   submitBtn.textContent = "Sending...";
   submitBtn.disabled = true;
 
@@ -434,16 +443,12 @@ contactForm.addEventListener("submit", async function (e) {
     });
 
     if (response.ok) {
-      // Store original form HTML
-      const originalFormHTML = contactForm.innerHTML;
-
-      // Success — show message
       contactForm.innerHTML = `
         <div class="contact__success">
           <div class="contact__success-icon">✓</div>
           <h3 class="contact__success-title">Message Sent!</h3>
           <p class="contact__success-text">
-            Thank you for reaching out, <strong>${name}</strong>. 
+            Thank you for reaching out, <strong>${name}</strong>.
             We'll get back to you within 24 hours.
           </p>
           <p class="contact__success-countdown">
@@ -452,27 +457,25 @@ contactForm.addEventListener("submit", async function (e) {
         </div>
       `;
 
-      // Countdown then restore form
       let seconds = 8;
       const countdownInterval = setInterval(() => {
         seconds--;
         const timerEl = document.getElementById("countdownTimer");
         if (timerEl) timerEl.textContent = seconds;
-
         if (seconds <= 0) {
           clearInterval(countdownInterval);
           contactForm.innerHTML = originalFormHTML;
-          reattachValidation(); // reattach event listeners
+          attachFormListeners(); /* reattach with fresh button */
         }
       }, 1000);
     } else {
-      throw new Error("Submission failed");
+      throw new Error("Failed");
     }
   } catch (err) {
+    const submitBtn = document.querySelector(".contact__submit");
     submitBtn.textContent = "Send Message";
     submitBtn.disabled = false;
 
-    // Show general error
     let generalError = contactForm.querySelector(".contact__general-error");
     if (!generalError) {
       generalError = document.createElement("p");
@@ -482,56 +485,7 @@ contactForm.addEventListener("submit", async function (e) {
     generalError.textContent =
       "Something went wrong. Please try again or contact us directly.";
   }
+}
 
-  function reattachValidation() {
-    document
-      .getElementById("contact-name")
-      .addEventListener("blur", function () {
-        const err = validateName(this.value);
-        err ? showError("contact-name", err) : clearError("contact-name");
-      });
-
-    document
-      .getElementById("contact-email")
-      .addEventListener("blur", function () {
-        const err = validateEmail(this.value);
-        err ? showError("contact-email", err) : clearError("contact-email");
-      });
-
-    document
-      .getElementById("contact-phone")
-      .addEventListener("blur", function () {
-        const err = validatePhone(this.value);
-        err ? showError("contact-phone", err) : clearError("contact-phone");
-      });
-
-    document
-      .getElementById("contact-inquiry")
-      .addEventListener("change", function () {
-        const err = validateInquiry(this.value);
-        err ? showError("contact-inquiry", err) : clearError("contact-inquiry");
-      });
-
-    document
-      .getElementById("contact-message")
-      .addEventListener("blur", function () {
-        const err = validateMessage(this.value);
-        err ? showError("contact-message", err) : clearError("contact-message");
-      });
-
-    [
-      "contact-name",
-      "contact-email",
-      "contact-phone",
-      "contact-inquiry",
-      "contact-message",
-    ].forEach((id) => {
-      document.getElementById(id).addEventListener("focus", function () {
-        this.classList.remove("contact__input--valid");
-      });
-    });
-
-    // Reattach submit listener
-    contactForm.addEventListener("submit", handleSubmit);
-  }
-});
+// Initialise
+attachFormListeners();
