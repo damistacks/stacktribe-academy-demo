@@ -2240,7 +2240,7 @@ p.xtra-small {
 
 .footer__info-link {
   font-family: "Inter", sans-serif;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1rem; /* 20px */
   font-weight: 400;
   color: var(--color-white);
   text-decoration: none;
@@ -2268,7 +2268,7 @@ p.xtra-small {
 }
 
 .footer__social-icon {
-  height: 32px;
+  height: 28px;
   width: auto;
   filter: brightness(0) invert(1);
   opacity: 0.85;
@@ -2328,7 +2328,7 @@ p.xtra-small {
   align-items: center;
   gap: 0.4rem;
   font-family: "Inter", sans-serif;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.125rem; /* 20px */
   font-weight: 500;
   color: var(--color-white);
   text-decoration: none;
@@ -2365,7 +2365,7 @@ p.xtra-small {
 .footer__campus-text,
 .footer__hours-text {
   font-family: "Inter", sans-serif;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1rem; /* 20px */
   font-weight: 400;
   color: var(--color-white);
   line-height: 1.5;
@@ -2379,7 +2379,7 @@ p.xtra-small {
 
 .footer__copyright {
   font-family: "Inter", sans-serif;
-  font-size: 1.25rem; /* 20px */
+  font-size: 1.125rem; /* 20px */
   font-weight: 400;
   color: #666666;
   text-align: center;
