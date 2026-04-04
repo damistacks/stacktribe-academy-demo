@@ -326,7 +326,7 @@
   /* Main director image full width on mobile */
   .director__img-main {
     width: 100%;
-    height: 400px;
+    height: 390px;
   }
 
   .director__img-main .director__img {
@@ -353,7 +353,7 @@
 
   .testimonials__img-wrap {
     width: 100%;
-    height: 200px;
+    height: 180px;
   }
 
   .testimonials__content {
