@@ -1,6 +1,6 @@
 # StackTribe Academy 📚
 
-Introducing StackTribe Academy Website.
+Introducing StackTribe Academy Website. <br>
 The idea is to build a digital solution for Nigerian Private Schools; to enable parents access their children results, make secure payments, and manage school activities — all in one place.
 
 Core Features: <br>
