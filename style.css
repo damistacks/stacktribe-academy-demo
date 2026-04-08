@@ -1788,7 +1788,7 @@ p.xtra-small {
 /* Card */
 .news__card {
   width: 100%;
-  background: var(--color-white);
+  background: #fdfdfd;
   border: 1px solid #e5e5e0;
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
