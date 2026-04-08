@@ -242,6 +242,8 @@
   /* Events */
   .events__frame {
     height: auto;
+    border: 1px solid #e5e5e0;
+    border-radius: 12px;
   }
 
   .events__list-wrap {
@@ -559,6 +561,7 @@
   /* Events */
   .events__frame {
     height: auto;
+    border: 1px solid #e5e5e0;
     border-radius: 12px;
     overflow: hidden;
   }
