@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   line-height: 1.6;
   color: #333;
   background-color: #f4f4f4;
@@ -110,7 +110,7 @@ p.xtra-small {
 
 /* ===== Inter Font Class ===== */
 .inter-regular {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
@@ -118,13 +118,13 @@ p.xtra-small {
 
 /* ===== Castoro Font Classes ===== */
 .castoro-regular {
-  font-family: "Castoro", serif;
+  font-family: 'Castoro', serif;
   font-weight: 400;
   font-style: normal;
 }
 
 .castoro-regular-italic {
-  font-family: "Castoro", serif;
+  font-family: 'Castoro', serif;
   font-weight: 400;
   font-style: italic;
 }
@@ -849,7 +849,7 @@ p.xtra-small {
 
 .admission-banner__title {
   font-size: 2.375rem; /* h2 — 38px as per Figma */
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 700;
   color: var(--color-white);
   line-height: 1.2;
@@ -860,7 +860,7 @@ p.xtra-small {
 
 .admission-banner__text {
   font-size: 1.25rem; /* p — 20px as per Figma */
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   color: rgba(255, 255, 255, 0.82);
   line-height: 1.6;
   margin-bottom: 1.8rem;
@@ -939,7 +939,7 @@ p.xtra-small {
 }
 
 .why-choose__title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.375rem; /* h2 — 38px */
   font-weight: 700;
   color: var(--color-green-dark);
@@ -949,7 +949,7 @@ p.xtra-small {
 }
 
 .why-choose__subtitle {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.25rem; /* p — 20px */
   font-weight: 400;
   color: var(--color-gray-text);
@@ -987,7 +987,7 @@ p.xtra-small {
 
 /* Card Title */
 .why-choose__card-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem; /* h4 — 24px */
   font-weight: 500;
   color: var(--color-dark);
@@ -996,7 +996,7 @@ p.xtra-small {
 
 /* Card Text */
 .why-choose__card-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.125rem; /* p.small — 18px */
   font-weight: 400;
   color: var(--color-gray-text);
@@ -1020,7 +1020,7 @@ p.xtra-small {
 }
 
 .programs__label {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem; /* h2.small — 24px */
   font-weight: 500;
   color: #006400;
@@ -1030,7 +1030,7 @@ p.xtra-small {
 }
 
 .programs__title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.375rem; /* h2 — 38px */
   font-weight: 700;
   color: var(--color-dark);
@@ -1074,7 +1074,7 @@ p.xtra-small {
 }
 
 .programs__card-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem; /* h4 — 24px */
   font-weight: 600;
   color: var(--color-dark);
@@ -1082,7 +1082,7 @@ p.xtra-small {
 }
 
 .programs__card-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.25rem; /* p — 20px */
   font-weight: 450;
   color: var(--color-gray-text);
@@ -1113,7 +1113,7 @@ p.xtra-small {
 }
 
 .director__label {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem; /* h2.small — 24px */
   font-weight: 500;
   color: #525252;
@@ -1122,7 +1122,7 @@ p.xtra-small {
 }
 
 .director__title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.375rem; /* h2 — 38px */
   font-weight: 700;
   color: #333333;
@@ -1133,7 +1133,7 @@ p.xtra-small {
 }
 
 .director__text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.25rem; /* p — 20px */
   font-weight: 450;
   color: #525252;
@@ -1149,7 +1149,7 @@ p.xtra-small {
 }
 
 .director__name {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.25rem; /* p — 20px */
   font-weight: 500;
   color: #111827;
@@ -1157,7 +1157,7 @@ p.xtra-small {
 }
 
 .director__role {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem; /* p.xtra-small — 16px */
   font-weight: 400;
   color: #8a8a8a;
@@ -1230,7 +1230,7 @@ p.xtra-small {
 }
 
 .testimonials__label {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: #006400;
@@ -1240,7 +1240,7 @@ p.xtra-small {
 }
 
 .testimonials__title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.375rem;
   font-weight: 700;
   color: #333333;
@@ -1314,7 +1314,7 @@ p.xtra-small {
 
 /* Quote Text */
 .testimonials__text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem; /* p — 24px */
   font-weight: 400;
   color: #404040;
@@ -1331,7 +1331,7 @@ p.xtra-small {
 }
 
 .testimonials__author-name {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.875rem; /* p.large — 30px */
   font-weight: 500;
   color: #111827;
@@ -1339,7 +1339,7 @@ p.xtra-small {
 }
 
 .testimonials__author-role {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem; /* p.xtra-small — 16px */
   font-weight: 400;
   color: #8a8a8a;
@@ -1427,7 +1427,7 @@ p.xtra-small {
 }
 
 .teachers__label {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: #006400;
@@ -1438,7 +1438,7 @@ p.xtra-small {
 }
 
 .teachers__title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.375rem;
   font-weight: 700;
   color: #333333;
@@ -1476,7 +1476,7 @@ p.xtra-small {
 
 /* Hover effect */
 .teachers__img-wrap::after {
-  content: "";
+  content: '';
   position: absolute;
   inset: 0;
   background: rgba(0, 100, 0, 0.15);
@@ -1509,7 +1509,7 @@ p.xtra-small {
 
 /* Name */
 .teachers__name {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.25rem;
   font-weight: 500;
   color: #111827;
@@ -1519,7 +1519,7 @@ p.xtra-small {
 
 /* Role */
 .teachers__role {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   color: #8a8a8a;
@@ -1537,7 +1537,7 @@ p.xtra-small {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #111;
@@ -1567,10 +1567,185 @@ p.xtra-small {
 }
 
 /* ─────────────────────
-   NEWS & EVENTS
+   UPCOMING EVENTS
+───────────────────── */
+.events {
+  background: var(--color-white);
+  padding: 80px 0;
+}
+
+/* Header */
+.events__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.events__label {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #006400;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.4rem;
+  line-height: 1.35;
+}
+
+.events__title {
+  font-family: 'Inter', sans-serif;
+  font-size: 2.375rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0;
+  line-height: 1.25;
+}
+
+/* Main Frame */
+.events__frame {
+  display: flex;
+  width: 100%;
+  height: 468px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Left List Wrap — 758px */
+.events__list-wrap {
+  width: 758px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Each Event Row */
+.events__row {
+  display: flex;
+  flex: 1;
+}
+
+/* Date Box */
+.events__date-box {
+  width: 208px;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+  color: var(--color-white);
+}
+
+.events__date-box--1 {
+  background: #3daf3d;
+  border-radius: 12px 0 0 0; /* top-left only */
+}
+
+.events__date-box--2 {
+  background: #41bf41;
+  border-radius: 0;
+}
+
+.events__date-box--3 {
+  background: #3daf3d;
+  border-radius: 0 0 0 12px; /* bottom-left only */
+}
+
+.events__day {
+  font-family: 'Inter', sans-serif;
+  font-size: 4rem; /* 64px */
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-white);
+}
+
+.events__month {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.125rem; /* 18px */
+  font-weight: 500;
+  color: var(--color-white);
+  line-height: 1.3;
+}
+
+/* Info Panel */
+.events__info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  gap: 0.6rem;
+}
+
+.events__info--1 {
+  background: #f9f9f9;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.events__info--2 {
+  background: #fdfdfd;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.events__info--3 {
+  background: #f9f9f9;
+}
+
+/* Meta row */
+.events__meta {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.events__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  color: #525252;
+  line-height: 1.4;
+}
+
+.events__meta-icon {
+  height: 14px;
+  width: auto;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+/* Event Title */
+.events__event-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem; /* 20px */
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+/* Right Image — 522px */
+.events__img-wrap {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 0 12px 12px 0; /* top-right + bottom-right only */
+}
+
+.events__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* ─────────────────────
+   LATEST NEWS
 ───────────────────── */
 .news {
-  background: var(--color-white);
+  background: #fdfbef;
   padding: 80px 0;
 }
 
@@ -1581,7 +1756,7 @@ p.xtra-small {
 }
 
 .news__label {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: #006400;
@@ -1592,7 +1767,7 @@ p.xtra-small {
 }
 
 .news__title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.375rem;
   font-weight: 700;
   color: #333333;
@@ -1613,7 +1788,7 @@ p.xtra-small {
 /* Card */
 .news__card {
   width: 100%;
-  background: rgba(253, 251, 239, 0.3);
+  background: var(--color-white);
   border-radius: 12px;
   box-shadow: 0 2px 16px rgba(0, 0, 0, 0.07);
   overflow: hidden;
@@ -1661,7 +1836,7 @@ p.xtra-small {
 
 /* Meta date — overrides existing card-meta */
 .meta-data {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.75rem;
   font-weight: 400;
   color: #6b7280;
@@ -1671,7 +1846,7 @@ p.xtra-small {
 
 /* Card Title */
 .news__card-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.125rem; /* h5 — 18px */
   font-weight: 700;
   color: #333333;
@@ -1681,7 +1856,7 @@ p.xtra-small {
 
 /* Card Text — overrides existing card-text */
 .card-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.875rem; /* 14px */
   font-weight: 500;
   color: #525252;
@@ -1695,7 +1870,7 @@ p.xtra-small {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 700;
   color: #006400;
@@ -1730,7 +1905,7 @@ p.xtra-small {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #111;
@@ -1763,7 +1938,7 @@ p.xtra-small {
    SCHOOL GALLERY
 ───────────────────── */
 .gallery {
-  background: #fdfbef;
+  background: var(--color-white);
   padding: 80px 0;
 }
 
@@ -1774,7 +1949,7 @@ p.xtra-small {
 }
 
 .gallery__label {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: #006400;
@@ -1785,7 +1960,7 @@ p.xtra-small {
 }
 
 .gallery__title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.375rem;
   font-weight: 700;
   color: #333333;
@@ -1845,7 +2020,7 @@ p.xtra-small {
 
 /* Overlay Text */
 .gallery__overlay-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--color-white);
@@ -1864,7 +2039,7 @@ p.xtra-small {
    CONTACT US
 ───────────────────── */
 .contact {
-  background: var(--color-white);
+  background: #fdfbef;
   padding: 80px 0;
 }
 
@@ -1875,7 +2050,7 @@ p.xtra-small {
 }
 
 .contact__label {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: #006400;
@@ -1886,7 +2061,7 @@ p.xtra-small {
 }
 
 .contact__title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 2.375rem;
   font-weight: 700;
   color: #333333;
@@ -1934,7 +2109,7 @@ p.xtra-small {
 }
 
 .contact__img-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 500;
   color: var(--color-white);
@@ -1982,7 +2157,7 @@ p.xtra-small {
 
 /* Label */
 .contact__label-field {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.125rem; /* 18px */
   font-weight: 500;
   color: #374151;
@@ -1994,7 +2169,7 @@ p.xtra-small {
   width: 100%;
   height: 46px;
   padding: 0 1rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem; /* 16px */
   font-weight: 500;
   color: #374151;
@@ -2036,7 +2211,7 @@ p.xtra-small {
   width: 100%;
   height: 150px;
   padding: 0.85rem 1rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   font-weight: 500;
   color: #374151;
@@ -2063,7 +2238,7 @@ p.xtra-small {
   width: auto;
   height: 48px;
   padding: 0 2rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.125rem; /* 18px */
   font-weight: 500;
   color: var(--color-white);
@@ -2093,7 +2268,7 @@ p.xtra-small {
 }
 
 .contact__error {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.8rem;
   font-weight: 400;
   color: #ef4444;
@@ -2102,7 +2277,7 @@ p.xtra-small {
 }
 
 .contact__general-error {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.875rem;
   color: #ef4444;
   text-align: center;
@@ -2135,7 +2310,7 @@ p.xtra-small {
 }
 
 .contact__success-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
   color: #333333;
@@ -2143,7 +2318,7 @@ p.xtra-small {
 }
 
 .contact__success-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem;
   color: #525252;
   line-height: 1.6;
@@ -2152,7 +2327,7 @@ p.xtra-small {
 }
 
 .contact__success-countdown {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 0.85rem;
   color: #8a8a8a;
   margin-bottom: 0;
@@ -2239,7 +2414,7 @@ p.xtra-small {
 }
 
 .footer__info-link {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem; /* 20px */
   font-weight: 400;
   color: var(--color-white);
@@ -2291,7 +2466,7 @@ p.xtra-small {
 }
 
 .footer__col-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.5rem; /* 24px */
   font-weight: 700;
   color: var(--color-white);
@@ -2327,7 +2502,7 @@ p.xtra-small {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.125rem; /* 20px */
   font-weight: 500;
   color: var(--color-white);
@@ -2364,7 +2539,7 @@ p.xtra-small {
 
 .footer__campus-text,
 .footer__hours-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1rem; /* 20px */
   font-weight: 400;
   color: var(--color-white);
@@ -2378,7 +2553,7 @@ p.xtra-small {
 }
 
 .footer__copyright {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.125rem; /* 20px */
   font-weight: 400;
   color: #666666;
