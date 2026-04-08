@@ -2242,7 +2242,7 @@ p.xtra-small {
   font-size: 1.125rem; /* 18px */
   font-weight: 500;
   color: var(--color-white);
-  background: var(--color-green-main);
+  background: #3daf3d;
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -2253,7 +2253,7 @@ p.xtra-small {
 }
 
 .contact__submit:hover {
-  background: var(--color-green-light);
+  background: var(--color-green-main);
   transform: translateY(-2px);
 }
 
